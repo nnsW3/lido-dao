@@ -18,7 +18,7 @@ These are the deployment setups, supported currently:
 - local (basically any node at http://127.0.0.1:8545);
 - Holešky testnet.
 
-Each is described in the details in the sections below.
+Each is described in detail in the sections below.
 
 > NB: Aragon UI for Lido DAO is to be deprecated and replaced by a custom solution, thus not included in the deployment script.
 
@@ -88,7 +88,7 @@ yarn hardhat node
 To do Holešky deployment, the following parameters must be set up via env variables:
 
 - `DEPLOYER`. The deployer address. The deployer must own its private key. To ensure proper operation, it should have an adequate amount of ether. The total deployment gas cost is approximately 100,000,000 gas, and this cost can vary based on whether specific components of the environment, such as the DepositContract, are deployed or not.
-- `RPC_URL`. Address of of the Ethereum RPC node to use. E.g. for Infura it is `https://holesky.infura.io/v3/<yourProjectId>`
+- `RPC_URL`. Address of the Ethereum RPC node to use. E.g. for Infura it is `https://holesky.infura.io/v3/<yourProjectId>`
 - `GAS_PRIORITY_FEE`. Gas priority fee. By default set to `2`
 - `GAS_MAX_FEE`. Gas max fee. By default set to `100`
 - `GATE_SEAL_FACTORY`. Address of the [GateSeal Factory](https://github.com/lidofinance/gate-seals) contract. Must be deployed in advance. Can be set to any `0x0000000000000000000000000000000000000000` to debug deployment
